@@ -103,6 +103,8 @@ public class EstrategiaAtencionTest {
         
     /**
      * Prueba para conocer si todos los empleados estan ocupados
+     * Si exitieran 10 llamadas o más de manera concurrente, estas quedan en espera hasta que se desocupe un empleado, 
+     * el primero que se desocupe es atiende la llamada siguiente, por este motivo se garantiza que todas las llamadas 
      */
     @Test
     public void testAsignarANadie() {
