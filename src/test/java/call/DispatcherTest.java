@@ -37,7 +37,8 @@ public class DispatcherTest {
     }
   
     /**
-     * Prueba para recibir maximo 10 llamadas concurrentes     
+     * Test para recibir maximo 10 llamadas concurrentes
+     * Test of dispatchCall method, of class Dispatcher.
      */
     @Test
     public void testDispatchCallMaximoDiez() {        
@@ -63,11 +64,9 @@ public class DispatcherTest {
     }
     
     /**
-     * Test para recibir maximo 20 llamadas concurrentes. 
-     * Cuando no existen empleados por la cantidad de llamadas se dejan las llamadas en espera
-     * Si exitieran 10 llamadas o más de manera concurrente, estas quedan en espera hasta que se desocupe un empleado, 
-     * el primero que se desocupe es atiende la llamada siguiente, por este motivo se garantiza que todas las llamadas 
-     * serán atendidas.    
+     * Test para recibir maximo 30 llamadas concurrentes. 
+     * Cuando no existen empleados por la cantidad de llamadas se 
+     * Test of dispatchCall method, of class Dispatcher.
      */
     @Test
     public void testDispatchCallMoreMasDeDiez() {        
@@ -87,7 +86,7 @@ public class DispatcherTest {
 
         Dispatcher dispatcher = new Dispatcher( empleados );
         dispatcher.start();                                   
-        for( int i = 0; i < 20 ; i ++){ 
+        for( int i = 0; i < 15 ; i ++){ 
             dispatcher.dispatchCall( new Llamada());
         }                
     }
