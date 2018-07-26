@@ -10,3 +10,8 @@ Fueron creadas 11 casos de pruebas con JUnit 4.12
 
 Se requiere descargar el proyecto y en con un navegador web ingresar a la ruta 
 <ruta del proyecto>/target/site/apidocs/index.html
+
+## Visualizar diagramas
+
+Imagen --> diagramaClasesCallCenter.png
+Imagen --> procesoCallCenter.png
